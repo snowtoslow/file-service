@@ -1,0 +1,8 @@
+jdk: openjdk8
+script:
+  - mvn  clean verify
+
+cache:
+  directories:
+    - .autoconf
+    - $C:\Users\User\.m2
