@@ -10,13 +10,21 @@
 	</parent>
 	<groupId>md.snow</groupId>
 	<artifactId>file-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>file-service</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
+		<docker.image.prefix>snowtoslow</docker.image.prefix>
 	</properties>
+	<distributionManagement>
+		<repository>
+			<id>bintray-becoming-m2</id>
+			<name>becoming-m2</name>
+			<url>https://api.bintray.com/maven/becoming/m2/${artifactId}/;publish=1</url>
+		</repository>
+	</distributionManagement>
 
 	<dependencies>
 		<dependency>
