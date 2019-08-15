@@ -1,4 +1,4 @@
-package md.snow.fileservice;
+package md.snow;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
