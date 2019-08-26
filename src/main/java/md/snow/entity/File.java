@@ -14,14 +14,14 @@ public class File {
     @Id
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
+    private String id;
+
     private String fileName;
+
+    private String contentType;
 
     @Lob
     private byte[] data;
-
-    private String id;
-
-    private String contentType;
 
 
     public String getFileName() {
